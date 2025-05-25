@@ -1,0 +1,522 @@
+# Universal MCP Host - Comprehensive .gitignore
+
+# =================================
+# Environment & Configuration Files
+# =================================
+# Never commit API keys or sensitive configuration
+.env
+config/.env
+*.env
+.env.local
+.env.production
+.env.staging
+
+# Local configuration overrides
+config/local_*.json
+config/*_local.json
+*_config_local.*
+
+# =================================
+# Python
+# =================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+.idea/
+
+# =================================
+# Streamlit
+# =================================
+.streamlit/
+*.streamlit
+streamlit_app.log
+
+# =================================
+# MCP Specific
+# =================================
+# MCP server runtime files
+*.mcp
+mcp_servers/
+mcp_data/
+mcp_cache/
+
+# Server logs and debug files
+server_logs/
+*.server.log
+mcp_debug/
+
+# Local server binaries
+servers/local/
+bin/local/
+
+# Generated server configurations
+config/generated_*.json
+config/auto_*.json
+
+# MCP session data
+sessions/
+*.session
+
+# Tool execution results cache
+tool_results/
+*.tool_cache
+
+# =================================
+# Databases & Data
+# =================================
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Database dumps
+*.sql
+*.dump
+
+# Data files
+data/
+datasets/
+*.csv
+*.json.bak
+*.jsonl
+
+# Temporary data
+tmp/
+temp/
+*.tmp
+*.temp
+
+# =================================
+# Logs & Debug
+# =================================
+# Log files
+logs/
+*.log
+*.log.*
+log_*.txt
+
+# Debug files
+debug/
+*.debug
+debug_*.json
+trace_*.json
+
+# Profiling
+*.prof
+*.profile
+
+# =================================
+# OS & System Files
+# =================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =================================
+# IDEs & Editors
+# =================================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.vsix
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+[._]*.s[a-v][a-z]
+!*.svg
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+*~
+tags
+[._]*.un~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =================================
+# Security & Keys
+# =================================
+# API keys and secrets
+*.key
+*.pem
+*.p12
+*.p8
+*.cer
+*.crt
+secrets/
+credentials/
+auth/
+tokens/
+
+# SSH keys
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.pub
+
+# GPG keys
+*.gpg
+*.asc
+
+# =================================
+# Backup & Temporary Files
+# =================================
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+*~
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+*.temp
+.#*
+
+# Archive files (usually not needed in repo)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# =================================
+# Performance & Cache
+# =================================
+# Cache directories
+cache/
+.cache/
+*.cache
+
+# Performance monitoring
+perf/
+*.perf
+
+# =================================
+# Documentation Build
+# =================================
+# Generated documentation
+docs/build/
+docs/_build/
+site/
+
+# =================================
+# Node.js (for MCP servers)
+# =================================
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+.env.production
+
+# parcel-bundler cache
+.parcel-cache
+
+# Next.js build output
+.next
+out
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+
+# =================================
+# Custom Project Exclusions
+# =================================
+# Local development overrides
+local/
+dev/
+development/
+
+# User-specific configurations
+user_configs/
+personal/
+
+# Experimental features
+experimental/
+lab/
+
+# Large files that shouldn't be in repo
+*.large
+models/
+weights/
+
+# Third-party integrations
+integrations/local/
+plugins/local/
+
+.groupedtimelineinclude

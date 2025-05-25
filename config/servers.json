@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/private/tmp"],
+      "description": "File system operations and management"
+    }
+  }
+}
