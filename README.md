@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/chtnnh-localmcp-badge.png)](https://mseep.ai/app/chtnnh-localmcp)
+
 # Local MCP Host
 
 A modern, full-featured Model Context Protocol (MCP) host with React frontend, FastAPI backend, and comprehensive multi-LLM support.
